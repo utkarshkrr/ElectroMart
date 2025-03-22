@@ -119,6 +119,7 @@ const Orders = () => {
               ElectroMart
             </Typography>
           </div>
+          
           <h2 style={{ fontFamily:"Arial, sans-serif", textAlign:"center" }}>Order List</h2>
           <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "10px", border: "1px solid #ddd" }}>
             <thead>
@@ -152,6 +153,9 @@ const Orders = () => {
           </table>
 
           <div style={{ marginTop: "35px",display:"flex", alignItems:"center", justifyContent:"center" }}>
+            <button onClick={() => window.location.href = "http://localhost:3000/admin-panel"} style={{ marginRight: "20px", padding: "10px 20px", backgroundColor: "#2394fc", color: "white", fontSize: "16px", border: "none", borderRadius: "5px", cursor: "pointer" }}>
+              Go Back
+            </button>
             <button onClick={clearOrders} style={{ marginRight: "20px", padding: "10px 20px", backgroundColor: "#0394fc", color: "white", fontSize: "16px", border: "none", borderRadius: "5px", cursor: "pointer" }}>
               Mark as Complete
             </button>
