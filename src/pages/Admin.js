@@ -145,6 +145,9 @@ function Admin() {
       </Box>
 
       <Box sx={{ display: "flex", gap: 2, mb: 3 }}>
+        <Button variant="contained" color="primary" onClick={() => window.location.href = "http://localhost:3000/admin-panel"}>
+          Go Back
+        </Button>
         <Button variant="contained" color="primary" onClick={handleAddProduct}>
           List New Product
         </Button>
