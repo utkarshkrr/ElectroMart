@@ -100,6 +100,14 @@ const Orders = () => {
               >
                 Login
               </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => window.location.href = "http://localhost:3000/admin-panel"} 
+                sx={{ mt:2, backgroundColor:"#00508a", marginLeft:2 }}
+              >
+                Go Back
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -153,7 +161,7 @@ const Orders = () => {
           </table>
 
           <div style={{ marginTop: "35px",display:"flex", alignItems:"center", justifyContent:"center" }}>
-            <button onClick={() => window.location.href = "http://localhost:3000/admin-panel"} style={{ marginRight: "20px", padding: "10px 20px", backgroundColor: "#2394fc", color: "white", fontSize: "16px", border: "none", borderRadius: "5px", cursor: "pointer" }}>
+            <button onClick={() => window.location.href = "http://localhost:3000/admin-panel"} style={{ marginRight: "20px", padding: "10px 20px", backgroundColor: "#00508a", color: "white", fontSize: "16px", border: "none", borderRadius: "5px", cursor: "pointer" }}>
               Go Back
             </button>
             <button onClick={clearOrders} style={{ marginRight: "20px", padding: "10px 20px", backgroundColor: "#0394fc", color: "white", fontSize: "16px", border: "none", borderRadius: "5px", cursor: "pointer" }}>
