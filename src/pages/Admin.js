@@ -114,6 +114,14 @@ function Admin() {
           <Button type="submit" variant="contained" color="primary">
             Login
           </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => window.location.href = "http://localhost:3000/admin-panel"} 
+            sx={{ backgroundColor:"#00508a" }}
+           >
+            Go Back
+          </Button>
         </Box>
       </Box>
     );
@@ -145,7 +153,7 @@ function Admin() {
       </Box>
 
       <Box sx={{ display: "flex", gap: 2, mb: 3 }}>
-        <Button variant="contained" color="primary" onClick={() => window.location.href = "http://localhost:3000/admin-panel"}>
+        <Button variant="contained" color="primary" onClick={() => window.location.href = "http://localhost:3000/admin-panel"} style={{backgroundColor:"#00508a"}}>
           Go Back
         </Button>
         <Button variant="contained" color="primary" onClick={handleAddProduct}>
